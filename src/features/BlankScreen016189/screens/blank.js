@@ -43,6 +43,13 @@ export default class Blank extends React.Component {
         value={this.state.TextInput_8}
         onChangeText={nextValue => this.setState({ TextInput_8: nextValue })}
       />
+      <Slider
+        value={50}
+        minimumValue={0}
+        maximumValue={100}
+        style={styles.Slider_9}
+      />
+      <Slider value={50} minimumValue={0} maximumValue={100} />
     </View>
   )
 }
@@ -57,5 +64,7 @@ const styles = StyleSheet.create({
     borderRightWidth: 2,
     borderTopWidth: 2,
     borderBottomWidth: 2
-  }
+  },
+  Slider_9: { width: 100 },
+  Slider_10: {}
 })
