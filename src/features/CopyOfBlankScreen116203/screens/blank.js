@@ -59,9 +59,11 @@ const styles = StyleSheet.create({
   TextInput_2: {},
   TextInput_3: {
     alignSelf: "center",
-    color: "#37c83c",
+    fontSize: 17,
+    color: "#776ad7",
     backgroundColor: "#f5dbdb",
-    fontFamily: "Merriweather-BoldItalic"
+    fontStyle: "italic",
+    fontWeight: "bold"
   },
   Text_4: { color: "#46c318" },
   TextInput_5: { color: "#39e123", fontFamily: "Merriweather-Regular" },
