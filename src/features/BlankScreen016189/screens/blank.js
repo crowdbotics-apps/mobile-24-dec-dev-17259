@@ -24,29 +24,11 @@ export default class Blank extends React.Component {
     }
   }
 
-  state = {
-    DateTimePicker_7: new Date("05/31/2009"),
-    TextInput_8: "",
-    DateTimePicker_9: new Date("")
-  }
+  state = { DateTimePicker_7: new Date("05/31/2009"), TextInput_8: "" }
 
   render = () => (
     <View>
       <Text style={styles.Text_2}>Sample text content</Text>
-      <Slider
-        value={50}
-        minimumValue={0}
-        maximumValue={100}
-        style={styles.Slider_3}
-      />
-      <Slider
-        value={50}
-        minimumValue={0}
-        maximumValue={100}
-        style={styles.Slider_4}
-      />
-      <Text>Sample text content</Text>
-      <Text>Sample text content</Text>
       <DateTimePicker
         showIcon={false}
         date={this.state.DateTimePicker_7}
@@ -61,13 +43,6 @@ export default class Blank extends React.Component {
         value={this.state.TextInput_8}
         onChangeText={nextValue => this.setState({ TextInput_8: nextValue })}
       />
-      <DateTimePicker
-        showIcon={false}
-        date={this.state.DateTimePicker_9}
-        onDateChange={selectedDate =>
-          this.setState({ DateTimePicker_9: selectedDate })
-        }
-      />
     </View>
   )
 }
@@ -75,10 +50,6 @@ export default class Blank extends React.Component {
 const styles = StyleSheet.create({
   View_1: {},
   Text_2: { alignSelf: "center" },
-  Slider_3: { width: 100, alignSelf: "center" },
-  Slider_4: { width: 100 },
-  Text_5: {},
-  Text_6: {},
   DateTimePicker_7: {},
   TextInput_8: {
     borderWidth: 2,
@@ -86,6 +57,5 @@ const styles = StyleSheet.create({
     borderRightWidth: 2,
     borderTopWidth: 2,
     borderBottomWidth: 2
-  },
-  DateTimePicker_9: {}
+  }
 })
