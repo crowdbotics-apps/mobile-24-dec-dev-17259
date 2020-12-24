@@ -57,6 +57,7 @@ export default class Blank extends React.Component {
       <TextInput
         placeholder=""
         keyboardType="numeric"
+        style={styles.TextInput_8}
         value={this.state.TextInput_8}
         onChangeText={nextValue => this.setState({ TextInput_8: nextValue })}
       />
@@ -79,6 +80,12 @@ const styles = StyleSheet.create({
   Text_5: {},
   Text_6: {},
   DateTimePicker_7: {},
-  TextInput_8: {},
+  TextInput_8: {
+    borderWidth: 2,
+    borderLeftWidth: 2,
+    borderRightWidth: 2,
+    borderTopWidth: 2,
+    borderBottomWidth: 2
+  },
   DateTimePicker_9: {}
 })
