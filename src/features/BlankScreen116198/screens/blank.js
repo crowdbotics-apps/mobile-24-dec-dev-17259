@@ -61,6 +61,6 @@ const styles = StyleSheet.create({
     backgroundColor: "#f5dbdb",
     fontFamily: "Merriweather-BoldItalic"
   },
-  Text_4: { color: "#46c318" },
+  Text_4: { width: "100%", height: 50, alignSelf: "center", color: "#46c318" },
   TextInput_5: { color: "#39e123", fontFamily: "Merriweather-Regular" }
 })
