@@ -24,7 +24,7 @@ export default class Blank extends React.Component {
     }
   }
 
-  state = {}
+  state = { DateTimePicker_7: new Date("") }
 
   render = () => (
     <View>
@@ -42,6 +42,14 @@ export default class Blank extends React.Component {
         style={styles.Slider_4}
       />
       <Text>Sample text content</Text>
+      <Text>Sample text content</Text>
+      <DateTimePicker
+        showIcon={false}
+        date={this.state.DateTimePicker_7}
+        onDateChange={selectedDate =>
+          this.setState({ DateTimePicker_7: selectedDate })
+        }
+      />
     </View>
   )
 }
@@ -51,5 +59,7 @@ const styles = StyleSheet.create({
   Text_2: { alignSelf: "center" },
   Slider_3: { width: 100, alignSelf: "center" },
   Slider_4: { width: 100 },
-  Text_5: {}
+  Text_5: {},
+  Text_6: {},
+  DateTimePicker_7: {}
 })
