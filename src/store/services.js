@@ -4,6 +4,11 @@ const newConnector = axios.create({
     "https://crowdbotics-slack-dev.herokuapp.com/dashboard/app/17259/storyboard/16189/",
   headers: { Accept: "application/json", "Content-Type": "application/json" }
 })
+const newConnector = axios.create({
+  baseURL:
+    "https://crowdbotics-slack-dev.herokuapp.com/dashboard/app/17259/storyboard/16189/",
+  headers: { Accept: "application/json", "Content-Type": "application/json" }
+})
 const mobiledecAPI = axios.create({
   baseURL: "https://mobile-24-dec-dev-17259.botics.co/",
   headers: { Accept: "application/json", "Content-Type": "application/json" }
