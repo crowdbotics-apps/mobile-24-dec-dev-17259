@@ -41,6 +41,7 @@ export default class Blank extends React.Component {
         maximumValue={100}
         style={styles.Slider_4}
       />
+      <Text>Sample text content</Text>
     </View>
   )
 }
@@ -49,5 +50,6 @@ const styles = StyleSheet.create({
   View_1: {},
   Text_2: { alignSelf: "center" },
   Slider_3: { width: 100, alignSelf: "center" },
-  Slider_4: { width: 100 }
+  Slider_4: { width: 100 },
+  Text_5: {}
 })
