@@ -48,6 +48,6 @@ export default class Blank extends React.Component {
 const styles = StyleSheet.create({
   View_1: {},
   Text_2: { alignSelf: "center" },
-  Slider_3: { width: 100 },
+  Slider_3: { width: 100, alignSelf: "center" },
   Slider_4: { width: 100 }
 })
